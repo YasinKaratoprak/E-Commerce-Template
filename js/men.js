@@ -3,14 +3,14 @@ const mensProducts = [
         id: 1,
         name: "Classic Denim Jeans",
         price: 59.99,
-        image: "images/men/jeans.jpg",
+        image: "../images/men/jeans.jpg",
         category: "clothing"
     },
     {
         id: 2,
         name: "Leather Dress Shoes",
         price: 89.99,
-        image: "images/men/dress-shoes.jpg",
+        image: "../images/men/dress-shoes.jpg",
         category: "shoes"
     },
     {

@@ -3,7 +3,7 @@ const marketProducts = [
         id: 1,
         name: "Organic Coffee",
         price: 12.99,
-        image: "images/coffee.jpg",
+        image: "../images/coffee.jpg",
         category: "beverages"
     },
     {

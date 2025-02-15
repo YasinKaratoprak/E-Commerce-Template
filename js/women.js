@@ -3,14 +3,14 @@ const womensProducts = [
         id: 101,
         name: "Summer Floral Dress",
         price: 49.99,
-        image: "images/women/dress.jpg",
+        image: "../images/women/dress.jpg",
         category: "clothing"
     },
     {
         id: 102,
         name: "High Heel Sandals",
         price: 69.99,
-        image: "images/women/sandals.jpg",
+        image: "../images/women/sandals.jpg",
         category: "shoes"
     },
     {

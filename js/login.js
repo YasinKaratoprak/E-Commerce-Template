@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartCount = document.querySelector('.cart-count');
     
     // Update cart count from localStorage
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+    updateCartCount();
 
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -50,7 +49,13 @@ function showError(message) {
     form.insertBefore(errorDiv, form.firstChild);
 }
 
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartCount = document.querySelector('.cart-count');
+    cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+}
+
 function simulateLogin(email) {
     localStorage.setItem('userEmail', email);
-    window.location.href = 'index.html';
+    window.location.href = 'html/index.html';
 }

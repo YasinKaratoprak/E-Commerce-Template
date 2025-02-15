@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Sellers - E-Commerce Store</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bestsellers.css">
+    <title>Women's Collection - E-Commerce Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/categories.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -34,13 +34,13 @@
     </nav>
 
     <main class="main-container">
-        <section class="bestsellers-section">
-            <h1>Best Selling Products</h1>
+        <section class="category-section">
+            <h1>Women's Collection</h1>
             <div class="filter-section">
                 <select id="category-filter">
                     <option value="all">All Categories</option>
-                    <option value="electronics">Electronics</option>
                     <option value="clothing">Clothing</option>
+                    <option value="shoes">Shoes</option>
                     <option value="accessories">Accessories</option>
                 </select>
                 <select id="sort-filter">
@@ -49,12 +49,12 @@
                     <option value="price-high">Price: High to Low</option>
                 </select>
             </div>
-            <div class="bestsellers-grid">
-                <!-- Products will be dynamically added here -->
+            <div class="products-grid" id="womens-products">
+                <!-- Products will be loaded dynamically -->
             </div>
         </section>
     </main>
 
-    <script src="js/bestsellers.js"></script>
+    <script src="../js/women.js"></script>
 </body>
 </html>
