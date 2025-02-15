@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market - E-Commerce Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LOGO</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="men.html">Men</a>
+                        <a href="women.html">Women</a>
+                    </div>
+                </div>
+                <a href="market.html">Market</a>
+                <a href="electronics.html">Electronics</a>
+                <a href="bestsellers.html">Best Sellers</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <section class="category-section">
+            <h1>Market Products</h1>
+            <div class="filter-section">
+                <select id="category-filter">
+                    <option value="all">All Products</option>
+                    <option value="food">Food</option>
+                    <option value="beverages">Beverages</option>
+                    <option value="household">Household</option>
+                </select>
+                <select id="sort-filter">
+                    <option value="popularity">Most Popular</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+            <div class="products-grid" id="market-products">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/market.js"></script>
+</body>
+</html>
